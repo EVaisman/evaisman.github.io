@@ -1,0 +1,102 @@
+---
+---
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700,400italic)
+$gray: #CACACA
+$night: #1B323B
+$slate: #778194
+
+body
+    color: $night
+    font-size: 16px
+    font-family: 'Noto Sans', sans-serif
+    font-weight: 400
+    margin: 0
+    padding: 0
+
+.serif
+    font-family: 'Noto Serif', serif
+
+a
+    color: $slate
+    text-decoration: underline
+    &:hover
+        color: $night
+
+.nav-bar
+    border-bottom: 1px solid $gray
+    .wrapper
+        margin: 0 auto
+        max-width: 900px
+        position: relative
+        padding: 30px 0
+
+    .site-title
+        color: $night
+        font-size: 20px
+        font-weight: 700
+        text-decoration: none
+
+    .links
+        position: absolute
+        right: 0
+        top: 32px
+
+    .page-link
+        color: $slate
+        font-size: 14px
+        letter-spacing: 1px
+        margin: 0 0 0 30px
+        text-decoration: none
+        text-transform: uppercase
+        &:hover
+            color: $night
+
+.page-content
+    .wrapper
+        margin: 0 auto
+        max-width: 900px
+
+        .page-header
+            margin: 60px auto
+            text-align: center
+
+            .page-heading
+                font-size: 32px
+                font-weight: 700
+                margin: 20px 0
+
+            .page-subheading
+                color: $slate
+                font-size: 16px
+                font-style: italic
+                font-weight: 400
+                margin: 20px 0
+
+        .page-content
+            margin: 60px auto
+
+            article
+                margin: 60px 0
+                a
+                    color: $night
+                    font-weight: 700
+
+                &.post-excerpt
+                    .post-date
+                        color: $slate
+                        margin: 20px 0
+                    .post-title
+                        margin: 20px 0
+                        a
+                            color: $night
+
+                &.book
+                    .book-author
+                        color: $slate
+                        margin: 20px 0
+                    .book-title
+                        margin: 20px 0
+                        a
+                            color: $night
+

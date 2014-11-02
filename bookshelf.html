@@ -1,16 +1,23 @@
 ---
 layout: default
+permalink: bookshelf/
+title: "Bookshelf"
 ---
-<div class="home">
 
-    <h1 class="page-heading"><b>BOOKSHELF</b></h1>
-    
-    <ul>
-        {% for book in site.data.books %}
-        <h1><a href="{{ book.url }}">{{ book.title }}</a></h1>
-        <h2><br>{{ book.author }}</br></h2>
-        <p> {{ book.description }} </p>
-        {% endfor %}
-    </ul>
+<hgroup class="page-header">
+    <h1 class="page-heading serif">Bookshelf</h1>
+    <h3 class="page-subheading serif">Things I read</h3>
+</hgroup>
 
+<div class="page-content">
+    {% for book in site.data.books %}
+    <article class="book">
+        <h2 class="book-title">
+            <a href="{{ book.url }}">{{ book.title }}</a>
+        </h2>
+        <section class="book-author">{{ book.author }}</section>
+        <section>{{ book.description }}</section>
+    </article>
+    {% endfor %}
 </div>
+

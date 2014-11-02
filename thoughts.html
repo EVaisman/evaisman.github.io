@@ -1,18 +1,22 @@
 ---
 layout: default
+permalink: thoughts/
+title: "Thoughts"
 ---
-<div class="home">
 
-    <h1 class="page-heading"><b>THOUGHTS</b></h1>
-    
-    <ul>
-        {% for post in site.posts %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <br>{{ post.date | date: "%m.%d.%Y" }}</br>
-        <p>
-            {{ post.excerpt }}
-        </p>
-        {% endfor %}
-    </ul>
+<hgroup class="page-header">
+    <h1 class="page-heading serif">Thoughts</h1>
+    <h3 class="page-subheading serif">Things on my mind</h3>
+</hgroup>
 
+<div class="page-content">
+    {% for post in site.posts %}
+    <article class="post-excerpt">
+        <section class="post-date">{{ post.date | date: "%B %-d, %Y" }}</section>
+        <h2 class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <section>{{ post.excerpt }}</section>
+    </article>
+    {% endfor %}
 </div>
