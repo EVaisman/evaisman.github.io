@@ -40,17 +40,23 @@ a
     .links
         position: absolute
         right: 0
-        top: 32px
+        top: 46px
 
     .page-link
         color: $slate
-        font-size: 14px
+        font-size: 15px
         letter-spacing: 1px
         margin: 0 0 0 30px
         text-decoration: none
-        text-transform: uppercase
         &:hover
             color: $night
+        &.active
+            font-weight: 700
+            color: black
+
+.header-image
+    img
+        max-width: 100%
 
 .page-content
     .wrapper
@@ -74,26 +80,51 @@ a
                 margin: 20px 0
 
         .page-content
-            margin: 60px auto
+            margin: 20px auto
 
             article
-                margin: 60px 0
+                margin: 60px auto
+
+                &.action-rows
+                    width: 810px
 
                 a
                     color: $night
                     font-weight: 700
 
-                img
+                .action-img
                     display: inline-block
                     height: auto
                     vertical-align: middle
-                    width: 80px
+                    width: 100px
 
-                section.inline
+                &.inline
                     display: inline-block
                     margin: 0 0 0 20px
                     max-width: 700px
                     vertical-align: middle
+
+                &.about-me
+                    display: inline-block
+                    max-width: 500px
+                    vertical-align: middle
+                    margin: 0 30px
+
+                &.logos
+                    text-align: center
+
+
+                    section
+                        margin: 30px 0
+                        display: inline-block
+                        text-align: center
+                        width: 297px
+                        height: 150px
+
+                    img
+                        width: auto
+                        max-width: 297px
+                        max-height: 150px
 
                 &.post-excerpt
                     .post-date
@@ -122,3 +153,11 @@ a
                         &:hover
                             color: $night
 
+.circular
+    width: 300px
+    height: 300px
+    border-radius: 150px
+    -webkit-border-radius: 150px
+    -moz-border-radius: 150px
+    background: url(/images/hiking_mugshot_425x425.png) no-repeat
+    background-size: 100% 100%

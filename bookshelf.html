@@ -4,20 +4,19 @@ permalink: bookshelf/
 title: "Bookshelf"
 ---
 
-<hgroup class="page-header">
-    <h1 class="page-heading serif">Bookshelf</h1>
-    <h3 class="page-subheading serif">Things I read</h3>
-</hgroup>
-
-<div class="page-content">
-    {% for book in site.data.books %}
-    <article class="book">
-        <h2 class="book-title">
-            <a href="{{ book.url }}">{{ book.title }}</a>
-        </h2>
-        <section class="book-author">{{ book.author }}</section>
-        <section>{{ book.description }}</section>
-    </article>
-    {% endfor %}
+<div class="header-image">
 </div>
 
+<div class="wrapper">
+    <div class="page-content">
+        {% for book in site.data.books %}
+        <article class="book">
+            <h2 class="book-title">
+                <a href="{{ book.url }}">{{ book.title }}</a>
+            </h2>
+            <section class="book-author">{{ book.author }}</section>
+            <section>{{ book.description }}</section>
+        </article>
+        {% endfor %}
+    </div>
+</div>
