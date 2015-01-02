@@ -9,14 +9,14 @@ $slate: #778194
 body
     color: $night
     font-size: 16px
-    font-family: 'Noto Sans', sans-serif
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
     font-weight: 400
     margin: 0
     padding: 0
 
 a
     color: $slate
-    text-decoration: underline
+    text-decoration: none
     &:hover
         color: $night
 
@@ -138,7 +138,6 @@ a
                 vertical-align: middle
 
             &.about-me
-                font-family: "Lucida Console", Monaco, monospace
                 display: inline-block
                 max-width: 450px
                 margin: 100px 0 0 40px
@@ -146,18 +145,25 @@ a
             &.post-excerpt
                 .post-date
                     color: $slate
+                    font-size: 20px
                     margin: 20px 0
+                    display: inline
                 .post-title
+                    font-weight: bold
+                    font-size: 20px
                     margin: 20px 0
+                    display: inline
                     a
                         color: $night
 
             &.book
                 .book-author
                     color: $slate
-                    margin: 20px 0
+                    font-size: 20px
+                    display: inline
                 .book-title
-                    margin: 20px 0
+                    font-size: 20px
+                    display: inline
                     a
                         color: $night
 

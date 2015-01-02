@@ -10,9 +10,7 @@ title: "Bookshelf"
     <div class="page-content">
         {% for book in site.data.books %}
         <article class="book">
-            <h2 class="book-title">
-                <a href="{{ book.url }}">{{ book.title }}</a>
-            </h2>
+            <h2 class="book-title"><a href="{{ book.url }}">{{ book.title }}</a></h2>
             <section class="book-author">{{ book.author }}</section>
             <section>{{ book.description }}</section>
         </article>
