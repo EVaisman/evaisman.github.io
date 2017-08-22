@@ -9,3 +9,5 @@ github_username:  EVaisman
 permalinks: /:title
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-minimal
